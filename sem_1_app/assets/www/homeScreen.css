@@ -1,0 +1,445 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_9 */
+#homeScreen_mobilebutton_9 {
+
+}
+.ui-btn.homeScreen_mobilebutton_9 {
+
+}
+/* mobilecontainer */
+.ui-content.homeScreen_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilebutton_12 */
+#homeScreen_mobilebutton_12 {
+	display: none;
+}
+.ui-btn.homeScreen_mobilebutton_12 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilelabel_51 */
+.homeScreen_mobilelabel_51 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	display: none;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.homeScreen_mobilefooter {
+	min-height:38px;
+}
+/* mobilepopup_13 */
+.homeScreen_mobilepopup_13 {
+
+}
+div.homeScreen_mobilepopup_13 {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.homeScreen_mobilepopup_13 .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+}
+/* mobilegrid_14 */
+.homeScreen_mobilegrid_14 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.homeScreen_mobilegrid_14_wrapper {
+
+}
+.homeScreen_mobilegrid_14 > tr > td {
+	vertical-align: top;
+}
+.homeScreen_mobilegrid_14_row_0, .homeScreen_mobilegrid_14_row_0 > td {
+	height: 70px
+}
+.homeScreen_mobilegrid_14_row_1, .homeScreen_mobilegrid_14_row_1 > td {
+	height: 30px
+}
+.homeScreen_mobilegrid_14_row_2, .homeScreen_mobilegrid_14_row_2 > td {
+	height: 30px
+}
+.homeScreen_mobilegrid_14_row_3, .homeScreen_mobilegrid_14_row_3 > td {
+	height: 30px
+}
+/* mobilegridcell_15 */
+.homeScreen_mobilegridcell_15 {
+	height:70px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_20 */
+.homeScreen_mobilelabel_20 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 17px;
+	margin: 4px 1px 4px 1px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_54 */
+.homeScreen_mobiletextinput_54 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_16 */
+.homeScreen_mobilegridcell_16 {
+	height:70px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_22 */
+.homeScreen_mobilelabel_22 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 17px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_25 */
+#homeScreen_mobilebutton_25 {
+
+}
+.ui-btn.homeScreen_mobilebutton_25 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_17 */
+.homeScreen_mobilegridcell_17 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_17 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_52 */
+.homeScreen_mobilelabel_52 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_18 */
+.homeScreen_mobilegridcell_18 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_18 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_53 */
+.homeScreen_mobiletextinput_53 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_45 */
+.homeScreen_mobilegridcell_45 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_45 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_46 */
+.homeScreen_mobilegridcell_46 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_46 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_47 */
+.homeScreen_mobilegridcell_47 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_47 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_48 */
+.homeScreen_mobilegridcell_48 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_48 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_43 */
+#homeScreen_mobilebutton_43 {
+
+}
+.ui-btn.homeScreen_mobilebutton_43 {
+	margin: 4px 5px 4px 5px;
+}
+/* panel_26 */
+.homeScreen_panel_26 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.homeScreen_panel_26:focus {
+	outline: 0;
+}
+/* mobilecheckboxgroup_27 */
+.homeScreen_mobilecheckboxgroup_27 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilecheckbox_28 */
+.homeScreen_mobilecheckbox_28 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_29 */
+.homeScreen_mobilecheckbox_29 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_30 */
+.homeScreen_mobilecheckbox_30 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_31 */
+.homeScreen_mobilecheckbox_31 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_32 */
+.homeScreen_mobilecheckbox_32 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_33 */
+.homeScreen_mobilecheckbox_33 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_34 */
+.homeScreen_mobilecheckbox_34 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilelabel_39 */
+.homeScreen_mobilelabel_39 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_41 */
+.homeScreen_mobilelabel_41 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_40 */
+.homeScreen_mobilelabel_40 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_38 */
+#homeScreen_mobilebutton_38 {
+
+}
+.ui-btn.homeScreen_mobilebutton_38 {
+	margin: 4px 5px 4px 5px;
+}
+/* panel_55 */
+.homeScreen_panel_55 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.homeScreen_panel_55:focus {
+	outline: 0;
+}
+/* mobilelabel_56 */
+.homeScreen_mobilelabel_56 {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelabel_58 */
+.homeScreen_mobilelabel_58 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_59 */
+#homeScreen_mobilebutton_59 {
+
+}
+.ui-btn.homeScreen_mobilebutton_59 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilepopup_60 */
+.homeScreen_mobilepopup_60 {
+
+}
+div.homeScreen_mobilepopup_60 {
+	max-height: 100vh;
+	box-sizing: border-box;
+}
+div.homeScreen_mobilepopup_60 .ui-popup-content-wrapper {
+	width:100%;
+	height:100%;
+	max-height: 99vh;
+	overflow:auto;
+	box-sizing: border-box;
+}
+/* mobilelabel_61 */
+.homeScreen_mobilelabel_61 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_66 */
+.homeScreen_mobilegrid_66 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.homeScreen_mobilegrid_66_wrapper {
+
+}
+.homeScreen_mobilegrid_66 > tr > td {
+	vertical-align: top;
+}
+.homeScreen_mobilegrid_66_row_0, .homeScreen_mobilegrid_66_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_67 */
+.homeScreen_mobilegridcell_67 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_67 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_72 */
+#homeScreen_mobilebutton_72 {
+
+}
+.ui-btn.homeScreen_mobilebutton_72 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_71 */
+.homeScreen_mobilegridcell_71 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.homeScreen_mobilegridcell_71 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_73 */
+#homeScreen_mobilebutton_73 {
+
+}
+.ui-btn.homeScreen_mobilebutton_73 {
+	margin: 4px 5px 4px 5px;
+}
+/*
+* CSS for addSubject generated by Exadel Appery
+*/
+/* mobilecontainer */
+.ui-content.addSubject_mobilecontainer {
+	padding: 16px 15px 15px 15px;
+}
+/* mobilelabel_116 */
+.addSubject_mobilelabel_116 {
+	text-decoration: none; font-weight: bold; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.addSubject_mobilefooter {
+	min-height:38px;
+}
+/* panel_80 */
+.addSubject_panel_80 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.addSubject_panel_80:focus {
+	outline: 0;
+}
+/* mobilecheckboxgroup_81 */
+.addSubject_mobilecheckboxgroup_81 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilecheckbox_82 */
+.addSubject_mobilecheckbox_82 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_83 */
+.addSubject_mobilecheckbox_83 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_84 */
+.addSubject_mobilecheckbox_84 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_97 */
+.addSubject_mobilecheckbox_97 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_98 */
+.addSubject_mobilecheckbox_98 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_99 */
+.addSubject_mobilecheckbox_99 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilecheckbox_100 */
+.addSubject_mobilecheckbox_100 {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+/* mobilebutton_101 */
+#addSubject_mobilebutton_101 {
+
+}
+.ui-btn.addSubject_mobilebutton_101 {
+	margin: 4px 5px 4px 5px;
+}

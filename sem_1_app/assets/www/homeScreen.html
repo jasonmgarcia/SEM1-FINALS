@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            homeScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                if (navigator.userAgent.match(/iP/i))
+                {
+                    $(window).bind('orientationchange', function(event)
+                    {
+                        $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+                    }).trigger('orientationchange');
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <link href="homeScreen.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="homeScreen.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="homeScreen" id="homeScreen"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Log out"
+            data-theme="f" name="mobileheader" id="homeScreen_mobileheader" class="homeScreen_mobileheader">
+                <h1 dsid="mobileheader">
+                    Schedule
+                </h1>
+                <!-- mobilebutton_9 --><!--
+                --><a data-role="button" name="mobilebutton_9" dsid="mobilebutton_9" class="homeScreen_mobilebutton_9 ui-btn-right"
+                style='min-height:20px; ' id="homeScreen_mobilebutton_9" data-corners="true" data-icon="plus"
+                data-iconpos="notext" x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="f" tabindex="2">
+                Button
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="homeScreen_mobilecontainer" name="mobilecontainer"
+            class="homeScreen_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilebutton_12 --><!--
+                --><a data-role="button" name="mobilebutton_12" dsid="mobilebutton_12" class="homeScreen_mobilebutton_12"
+                style='min-height:20px; ' id="homeScreen_mobilebutton_12" data-corners="true" data-icon="none"
+                data-iconpos='nowhere' x-apple-data-detectors="false" data-mini="false" data-theme="f"
+                tabindex="4">
+                &nbsp;
+                </a><!--
+                --><!-- mobilelabel_51 -->
+                <div name="mobilelabel_51" id="homeScreen_mobilelabel_51" dsid="mobilelabel_51"
+                data-role="appery_label" class="homeScreen_mobilelabel_51">
+                </div>
+            </div>
+            <!-- mobilepopup_13 -->
+            <div data-role="popup" name="mobilepopup_13" dsid="mobilepopup_13" id="homeScreen_mobilepopup_13"
+            class="homeScreen_mobilepopup_13" data-corners="true" data-dismissible="true" data-overlay-theme=""
+            data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilegrid_14 -->
+                    <div class="homeScreen_mobilegrid_14_wrapper" data-wrapper-for="mobilegrid_14">
+                        <table id="homeScreen_mobilegrid_14" class="homeScreen_mobilegrid_14" dsid="mobilegrid_14"
+                        name="mobilegrid_14" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <tr class="homeScreen_mobilegrid_14_row_0">
+                                <!-- mobilegridcell_15 -->
+                                <td id="homeScreen_mobilegridcell_15" name="mobilegridcell_15" class="homeScreen_mobilegridcell_15"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_20 -->
+                                        <div name="mobilelabel_20" id="homeScreen_mobilelabel_20" dsid="mobilelabel_20"
+                                        data-role="appery_label" class="homeScreen_mobilelabel_20">
+                                            Course Name:
+                                        </div>
+                                        <!-- mobiletextinput_54 -->
+                                        <div data-role="fieldcontain" class="homeScreen_mobiletextinput_54 ">
+                                            <input type="text" name="mobiletextinput_54" dsid="mobiletextinput_54" value=""
+                                            placeholder="Course" id="homeScreen_mobiletextinput_54" tabindex="20" multiple data-theme="f"
+                                            class="homeScreen_mobiletextinput_54" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_16 -->
+                                <td id="homeScreen_mobilegridcell_16" name="mobilegridcell_16" class="homeScreen_mobilegridcell_16"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_22 -->
+                                        <div name="mobilelabel_22" id="homeScreen_mobilelabel_22" dsid="mobilelabel_22"
+                                        data-role="appery_label" class="homeScreen_mobilelabel_22">
+                                            Days:
+                                        </div>
+                                        <!-- mobilebutton_25 --><!--
+                                        --><a data-role="button" name="mobilebutton_25" dsid="mobilebutton_25" class="homeScreen_mobilebutton_25"
+                                        id="homeScreen_mobilebutton_25" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="f" tabindex="9">
+                                        Add
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="homeScreen_mobilegrid_14_row_1">
+                                <!-- mobilegridcell_17 -->
+                                <td id="homeScreen_mobilegridcell_17" name="mobilegridcell_17" class="homeScreen_mobilegridcell_17"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilelabel_52 -->
+                                        <div name="mobilelabel_52" id="homeScreen_mobilelabel_52" dsid="mobilelabel_52"
+                                        data-role="appery_label" class="homeScreen_mobilelabel_52">
+                                            Time:
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_18 -->
+                                <td id="homeScreen_mobilegridcell_18" name="mobilegridcell_18" class="homeScreen_mobilegridcell_18"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobiletextinput_53 -->
+                                        <div data-role="fieldcontain" class="homeScreen_mobiletextinput_53 ">
+                                            <input type="text" name="mobiletextinput_53" dsid="mobiletextinput_53" value=""
+                                            placeholder="e.g. 7:00 A.M. - 7:00 P.M." id="homeScreen_mobiletextinput_53" tabindex="19"
+                                            multiple data-theme="f" class="homeScreen_mobiletextinput_53" />
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="homeScreen_mobilegrid_14_row_2">
+                                <!-- mobilegridcell_45 -->
+                                <td id="homeScreen_mobilegridcell_45" name="mobilegridcell_45" class="homeScreen_mobilegridcell_45"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_46 -->
+                                <td id="homeScreen_mobilegridcell_46" name="mobilegridcell_46" class="homeScreen_mobilegridcell_46"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="homeScreen_mobilegrid_14_row_3">
+                                <!-- mobilegridcell_47 -->
+                                <td id="homeScreen_mobilegridcell_47" name="mobilegridcell_47" class="homeScreen_mobilegridcell_47"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_48 -->
+                                <td id="homeScreen_mobilegridcell_48" name="mobilegridcell_48" class="homeScreen_mobilegridcell_48"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- mobilebutton_43 --><!--
+                    --><a data-role="button" name="mobilebutton_43" dsid="mobilebutton_43" class="homeScreen_mobilebutton_43"
+                    id="homeScreen_mobilebutton_43" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="16">
+                    Save
+                    </a>
+                </div>
+            </div>
+            <!-- panel_26 -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="overlay"
+            id="homeScreen_panel_26" class="homeScreen_panel_26" name="panel_26" dsid="panel_26"
+            data-theme="f">
+                <div data-role="fieldcontain" class="homeScreen_mobilecheckboxgroup_27" id="homeScreen_mobilecheckboxgroup_27"
+                dsid="mobilecheckboxgroup_27">
+                    <fieldset data-role="controlgroup" data-theme="f" class="">
+                        <span dsid="mobilecheckbox_28" class="homeScreen_mobilecheckbox_28" name="mobilecheckbox_28">
+                            <input type="checkbox" name="mobilecheckboxgroup_27" id="homeScreen_mobilecheckbox_28"
+                            tabindex="10" value="Item 1" />
+                            <label id="homeScreen_mobilecheckbox_28_label" for="homeScreen_mobilecheckbox_28">
+                                Monday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_29" class="homeScreen_mobilecheckbox_29" name="mobilecheckbox_29">
+                            <input type="checkbox" name="mobilecheckboxgroup_27" id="homeScreen_mobilecheckbox_29"
+                            tabindex="10" value="Item 2" />
+                            <label id="homeScreen_mobilecheckbox_29_label" for="homeScreen_mobilecheckbox_29">
+                                Tuesday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_30" class="homeScreen_mobilecheckbox_30" name="mobilecheckbox_30">
+                            <input type="checkbox" name="mobilecheckboxgroup_27" id="homeScreen_mobilecheckbox_30"
+                            tabindex="10" value="Item 3" />
+                            <label id="homeScreen_mobilecheckbox_30_label" for="homeScreen_mobilecheckbox_30">
+                                Wednesday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_31" class="homeScreen_mobilecheckbox_31" name="mobilecheckbox_31">
+                            <input type="checkbox" name="mobilecheckboxgroup_27" id="homeScreen_mobilecheckbox_31"
+                            tabindex="10" value="Item 4" />
+                            <label id="homeScreen_mobilecheckbox_31_label" for="homeScreen_mobilecheckbox_31">
+                                Thursday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_32" class="homeScreen_mobilecheckbox_32" name="mobilecheckbox_32">
+                            <input type="checkbox" name="mobilecheckboxgroup_27" id="homeScreen_mobilecheckbox_32"
+                            tabindex="10" value="Item 5" />
+                            <label id="homeScreen_mobilecheckbox_32_label" for="homeScreen_mobilecheckbox_32">
+                                Friday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_33" class="homeScreen_mobilecheckbox_33" name="mobilecheckbox_33">
+                            <input type="checkbox" name="mobilecheckboxgroup_27" id="homeScreen_mobilecheckbox_33"
+                            tabindex="10" value="Item 6" />
+                            <label id="homeScreen_mobilecheckbox_33_label" for="homeScreen_mobilecheckbox_33">
+                                Saturday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_34" class="homeScreen_mobilecheckbox_34" name="mobilecheckbox_34">
+                            <input type="checkbox" name="mobilecheckboxgroup_27" id="homeScreen_mobilecheckbox_34"
+                            tabindex="10" value="Item 7" />
+                            <label id="homeScreen_mobilecheckbox_34_label" for="homeScreen_mobilecheckbox_34">
+                                Sunday
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+                <!-- mobilelabel_39 -->
+                <div name="mobilelabel_39" id="homeScreen_mobilelabel_39" dsid="mobilelabel_39"
+                data-role="appery_label" class="homeScreen_mobilelabel_39">
+                </div>
+                <!-- mobilelabel_41 -->
+                <div name="mobilelabel_41" id="homeScreen_mobilelabel_41" dsid="mobilelabel_41"
+                data-role="appery_label" class="homeScreen_mobilelabel_41">
+                </div>
+                <!-- mobilelabel_40 -->
+                <div name="mobilelabel_40" id="homeScreen_mobilelabel_40" dsid="mobilelabel_40"
+                data-role="appery_label" class="homeScreen_mobilelabel_40">
+                </div>
+                <!-- mobilebutton_38 --><!--
+                --><a data-role="button" name="mobilebutton_38" dsid="mobilebutton_38" class="homeScreen_mobilebutton_38"
+                id="homeScreen_mobilebutton_38" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="true" data-theme="f" tabindex="14">
+                Add
+                </a>
+            </div>
+            <!-- panel_55 -->
+            <div data-role="panel" tabindex="-1" data-position="right" data-display="overlay"
+            id="homeScreen_panel_55" class="homeScreen_panel_55" name="panel_55" dsid="panel_55"
+            data-theme="f">
+                <!-- mobilelabel_56 -->
+                <div name="mobilelabel_56" id="homeScreen_mobilelabel_56" dsid="mobilelabel_56"
+                data-role="appery_label" class="homeScreen_mobilelabel_56">
+                </div>
+                <!-- mobilelabel_58 -->
+                <div name="mobilelabel_58" id="homeScreen_mobilelabel_58" dsid="mobilelabel_58"
+                data-role="appery_label" class="homeScreen_mobilelabel_58">
+                </div>
+                <!-- mobilebutton_59 --><!--
+                --><a data-role="button" name="mobilebutton_59" dsid="mobilebutton_59" class="homeScreen_mobilebutton_59"
+                id="homeScreen_mobilebutton_59" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="true" data-theme="f" tabindex="21">
+                Delete
+                </a>
+            </div>
+            <!-- mobilepopup_60 -->
+            <div data-role="popup" name="mobilepopup_60" dsid="mobilepopup_60" id="homeScreen_mobilepopup_60"
+            class="homeScreen_mobilepopup_60" data-corners="true" data-dismissible="true" data-overlay-theme=""
+            data-theme="" data-shadow="true" data-tolerance="30,15,30,15">
+                <div class="ui-popup-content-wrapper">
+                    <!-- mobilelabel_61 -->
+                    <div name="mobilelabel_61" id="homeScreen_mobilelabel_61" dsid="mobilelabel_61"
+                    data-role="appery_label" class="homeScreen_mobilelabel_61">
+                        Are you sure you want to delete?
+                    </div>
+                    <!-- mobilegrid_66 -->
+                    <div class="homeScreen_mobilegrid_66_wrapper" data-wrapper-for="mobilegrid_66">
+                        <table id="homeScreen_mobilegrid_66" class="homeScreen_mobilegrid_66" dsid="mobilegrid_66"
+                        name="mobilegrid_66" cellpadding=0 cellspacing=0>
+                            <col style="width:auto;" />
+                            <col style="width:auto;" />
+                            <tr class="homeScreen_mobilegrid_66_row_0">
+                                <!-- mobilegridcell_67 -->
+                                <td id="homeScreen_mobilegridcell_67" name="mobilegridcell_67" class="homeScreen_mobilegridcell_67"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_72 --><!--
+                                        --><a data-role="button" name="mobilebutton_72" dsid="mobilebutton_72" class="homeScreen_mobilebutton_72"
+                                        id="homeScreen_mobilebutton_72" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="f" tabindex="23">
+                                        Yes
+                                        </a>
+                                    </div>
+                                </td>
+                                <!-- mobilegridcell_71 -->
+                                <td id="homeScreen_mobilegridcell_71" name="mobilegridcell_71" class="homeScreen_mobilegridcell_71"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilebutton_73 --><!--
+                                        --><a data-role="button" name="mobilebutton_73" dsid="mobilebutton_73" class="homeScreen_mobilebutton_73"
+                                        id="homeScreen_mobilebutton_73" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-mini="true" data-theme="f" tabindex="24">
+                                        No
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="addSubject" id="addSubject"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="addSubject_mobileheader" class="addSubject_mobileheader">
+                <h1 dsid="mobileheader">
+                    Subject
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="addSubject_mobilecontainer" name="mobilecontainer"
+            class="addSubject_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <!-- mobilelabel_116 -->
+                <div name="mobilelabel_116" id="addSubject_mobilelabel_116" dsid="mobilelabel_116"
+                data-role="appery_label" class="addSubject_mobilelabel_116">
+                </div>
+            </div>
+            <!-- panel_80 -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="push" id="addSubject_panel_80"
+            class="addSubject_panel_80" name="panel_80" dsid="panel_80" data-theme="f">
+                <div data-role="fieldcontain" class="addSubject_mobilecheckboxgroup_81" id="addSubject_mobilecheckboxgroup_81"
+                dsid="mobilecheckboxgroup_81">
+                    <fieldset data-role="controlgroup" data-theme="f" class="">
+                        <span dsid="mobilecheckbox_82" class="addSubject_mobilecheckbox_82" name="mobilecheckbox_82">
+                            <input type="checkbox" name="mobilecheckboxgroup_81" id="addSubject_mobilecheckbox_82"
+                            tabindex="20" value="Item 1" />
+                            <label id="addSubject_mobilecheckbox_82_label" for="addSubject_mobilecheckbox_82">
+                                Monday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_83" class="addSubject_mobilecheckbox_83" name="mobilecheckbox_83">
+                            <input type="checkbox" name="mobilecheckboxgroup_81" id="addSubject_mobilecheckbox_83"
+                            tabindex="20" value="Item 2" />
+                            <label id="addSubject_mobilecheckbox_83_label" for="addSubject_mobilecheckbox_83">
+                                Tuesday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_84" class="addSubject_mobilecheckbox_84" name="mobilecheckbox_84">
+                            <input type="checkbox" name="mobilecheckboxgroup_81" id="addSubject_mobilecheckbox_84"
+                            tabindex="20" value="Item 3" />
+                            <label id="addSubject_mobilecheckbox_84_label" for="addSubject_mobilecheckbox_84">
+                                Wednesday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_97" class="addSubject_mobilecheckbox_97" name="mobilecheckbox_97">
+                            <input type="checkbox" name="mobilecheckboxgroup_81" id="addSubject_mobilecheckbox_97"
+                            tabindex="20" value="Item 4" />
+                            <label id="addSubject_mobilecheckbox_97_label" for="addSubject_mobilecheckbox_97">
+                                Thursday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_98" class="addSubject_mobilecheckbox_98" name="mobilecheckbox_98">
+                            <input type="checkbox" name="mobilecheckboxgroup_81" id="addSubject_mobilecheckbox_98"
+                            tabindex="20" value="Item 5" />
+                            <label id="addSubject_mobilecheckbox_98_label" for="addSubject_mobilecheckbox_98">
+                                Friday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_99" class="addSubject_mobilecheckbox_99" name="mobilecheckbox_99">
+                            <input type="checkbox" name="mobilecheckboxgroup_81" id="addSubject_mobilecheckbox_99"
+                            tabindex="20" value="Item 6" />
+                            <label id="addSubject_mobilecheckbox_99_label" for="addSubject_mobilecheckbox_99">
+                                Saturday
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox_100" class="addSubject_mobilecheckbox_100" name="mobilecheckbox_100">
+                            <input type="checkbox" name="mobilecheckboxgroup_81" id="addSubject_mobilecheckbox_100"
+                            tabindex="20" value="Item 7" />
+                            <label id="addSubject_mobilecheckbox_100_label" for="addSubject_mobilecheckbox_100">
+                                Sunday
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+                <!-- mobilebutton_101 --><!--
+                --><a data-role="button" name="mobilebutton_101" dsid="mobilebutton_101" class="addSubject_mobilebutton_101"
+                style='min-height:20px; ' id="addSubject_mobilebutton_101" data-corners="true" data-icon="check"
+                data-iconpos="notext" x-apple-data-detectors="false" data-mini="false" data-theme="f"
+                tabindex="24">
+                &nbsp;
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>
